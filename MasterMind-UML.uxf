@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>246</y>
+      <w>156</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>Mastermind (GameMenu.py)
+--
++ displayInformation():str
++ gameChoice():str
++ play():void
+- menuChoiceValidation:list
+- gameChoiceValidation:list
++getPlayerName():list
++play():void
+--
+Responsibilities:
+1) Display banner.
+2) Display menu &amp; get menu
+	option.
+3) Validate menu option.
+4) Get game choice
+5) Validate game choice.
+6) Initiate the game.
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>654</x>
+      <y>300</y>
+      <w>144</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>MasterMind44Player
+--
+
+--
+Responsibility:
+1) Starts the MasterMind44 game</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>258</x>
+      <y>306</y>
+      <w>126</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>CodeBreaker(CodeBreaker.py)
+--
++ guessCode():list
++breakCode():list
+--
+Responsibilities:
+1) Guess the hidden code</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>498</y>
+      <w>126</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>CodeMaker(CodeMaker.py)
+--
++ setCode():list
++codeSet():list
+--
+Responsibilities:
+1) Create code.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>48</y>
+      <w>156</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>TurnTracker(TurnTracker.py) -&gt; Rows 
+--
++ turnTrack():int
+--
+Responsibilities:
+1) Keep the track of attempts </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>612</x>
+      <y>30</y>
+      <w>162</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>ComputerMode(Computer.py) -&gt; Board
+--
+-randomCode():list
+-displayCodes():list
+-giveFeedback():str
+-giveFeedbackMM44():str
+--
+Responsibilities:
+1) To create random codes for both the 
+	games.
+2) Display the codes to each player for
+	MasterMind44.
+3) Give feedbacks</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>324</x>
+      <y>492</y>
+      <w>144</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>CodeValidator(CodeValidation.py)
+--
+-codeLengthValidation():bool
+-codeColorValidation():bool
+-MM44codeLengthValidator():bool
+-MM44codeColorValidtor():
+--
+Responsibilities:
+1) Validates the code.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>534</x>
+      <y>408</y>
+      <w>18</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>318</x>
+      <y>276</y>
+      <w>114</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>170.0;10.0;10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>534</x>
+      <y>72</y>
+      <w>90</w>
+      <h>186</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;290.0;10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>72</y>
+      <w>102</w>
+      <h>186</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>150.0;290.0;150.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>438</x>
+      <y>408</y>
+      <w>24</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>312</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>324</x>
+      <y>366</y>
+      <w>54</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0;70.0;120.0;70.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>558</y>
+      <w>192</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>300.0;10.0;300.0;90.0;10.0;90.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>294</x>
+      <y>96</y>
+      <w>18</w>
+      <h>222</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;350.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>204</x>
+      <y>84</y>
+      <w>132</w>
+      <h>450</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>60.0;10.0;10.0;10.0;10.0;730.0;200.0;730.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>342</x>
+      <y>0</y>
+      <w>330</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0;530.0;10.0;530.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>144</y>
+      <w>18</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;260.0</additional_attributes>
+  </element>
+</diagram>
