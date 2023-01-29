@@ -95,7 +95,7 @@ class Mastermind():
                     'each peg can be of the colour (R)ed, B(L)ue, (G)reen, (Y)ellow, (W)hite,\n'
                     'or (B)lack. Specify the code by specifying four characters where each\n'
                     'character indicates a colour as above. For example, WWRG represents the\n'
-                    'code White-White-Red-Green. You need to en ter the code twice. No character\n'
+                    'code White-White-Red-Green. You need to enter the code twice. No character\n'
                     'is shown on the screen so', names[1],'cannot see it.\n')
                 setC = CodeMaker()
                 a = None
